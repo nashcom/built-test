@@ -42,16 +42,17 @@ jobs:
 
       - name: Create add-on package
         run: |
+         TAR_NAME=hello-$(cat version.txt).taz
          cd dist 
-         tar -cvzf ../hello.taz *
+         tar -cvzf "../$TAR_NAME" *
          cd ..
-         sha256sum hello.taz | cut -f1 -d" " > checksum.txt
+         sha256sum "$TAR_NAME" | cut -f1 -d" " > checksum.txt
 
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            hello.taz
+            *.taz
             checksum.txt 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
