@@ -22,11 +22,14 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.21'
+            
+      - name: Prepare
+        run: |
+          mkdir -p dist/linux-bin
 
       - name: Build Go binary
         run: |
-          mkdir -p dist
-          go build -gccgoflags=-static -o dist/hello_go go/hello.go
+          go build -gccgoflags=-static -o dist/linux-bin/hello_go go/hello.go
 
       - name: Build C++ binary (Alpine static)
         run: |
@@ -35,14 +38,21 @@ jobs:
             -w /src/cpp \
             alpine:latest \
             sh -c "apk add --no-cache g++ musl-dev make && make"
-          cp cpp/hello dist/hello_cpp
+          cp cpp/hello dist/linux-bin/hello_cpp
+
+      - name: Create add-on package
+        run: |
+         cd dist 
+         cd tar -cvzf ../hello.taz *
+         cd ..
+         sha256sum hello.taz | cut -f1 -d" " > checksum.txt
 
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            dist/hello_go
-            dist/hello_cpp
+            hello.taz
+            checksum.txt 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
