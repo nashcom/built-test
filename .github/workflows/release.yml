@@ -43,7 +43,7 @@ jobs:
       - name: Create add-on package
         run: |
          cd dist 
-         cd tar -cvzf ../hello.taz *
+         tar -cvzf ../hello.taz *
          cd ..
          sha256sum hello.taz | cut -f1 -d" " > checksum.txt
 
