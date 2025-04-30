@@ -5,6 +5,8 @@ on:
   push:
     tags:
       - 'v*'  # Run on tags like v1.0.0
+  release:
+    types: [created]
 
 jobs:
   release:
