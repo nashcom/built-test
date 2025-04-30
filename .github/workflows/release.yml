@@ -34,7 +34,8 @@ jobs:
             -v "$PWD":/src \
             -w /src/cpp \
             alpine:latest \
-            sh -c "apk add --no-cache g++ musl-dev make && make && cp hello /srv/dist/hello_go"
+            sh -c "apk add --no-cache g++ musl-dev make && make"
+          cp cpp/hello dist/hello_cpp
 
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v1
