@@ -1,6 +1,6 @@
 # Compiler and flags
 CXX ?= g++
-CXXFLAGS ?= -O2
+CXXFLAGS ?= -O2 -static
 
 # Source and output
 SRC = hello.cpp
