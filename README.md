@@ -15,6 +15,8 @@
 [![Alpine Linux](https://img.shields.io/badge/Alpine_Linux-0D597F?logo=alpinelinux&logoColor=white)](https://alpinelinux.org)
 
 
+[![HCL](https://img.shields.io/badge/Platform-HCL-0066A1?logo=data:image/svg+xml;base64,<base64-encoded-logo>)](https://www.hcltech.com)
+
 
 This is a simple build test repository for testing GitHub actions and trying out other functionality only.
 
