@@ -9,9 +9,9 @@
 [![Nash!Com Blog](https://img.shields.io/badge/Blog-Nash!Com-blue)](https://blog.nashcom.de)
 
 
-[![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com)
 [![Red Hat](https://img.shields.io/badge/Red_Hat-EE0000?logo=redhat&logoColor=white)](https://www.redhat.com)
 [![SUSE Linux](https://img.shields.io/badge/SUSE_Linux-0C322C?logo=suse&logoColor=white)](https://www.suse.com)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com)
 
 
 This is a simple build test repository for testing GitHub actions and trying out other functionality only.
