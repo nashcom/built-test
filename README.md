@@ -1,4 +1,4 @@
-# buil-test
+# built-test
 
 
 [![HCL Domino](https://img.shields.io/badge/HCL-Domino-ffde21)](https://www.hcltechsw.com/domino)
