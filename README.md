@@ -6,12 +6,16 @@
 [![Build](https://github.com/nashcom/buil-test/actions/workflows/release.yml/badge.svg)](https://github.com/nashcom/buil-test/actions/workflows/release.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/nashcom/buil-test/blob/main/LICENSE)
 [![GHCR](https://img.shields.io/badge/registry-ghcr.io-blue?logo=docker)](https://github.com/nashcom/buil-test/pkgs/container/alpine_build_env)
-[![Nash!Com Blog](https://img.shields.io/badge/Blog-Nash!Com-blue)](https://blog.nashcom.de)
 
+[![Nash!Com Blog](https://img.shields.io/badge/Blog-Nash!Com-blue)](https://blog.nashcom.de)
+[![Mastodon](https://img.shields.io/badge/@nashed@mastodon.social-6364FF?logo=mastodon&logoColor=white)](https://mastodon.social/@nashed)
 
 [![Red Hat](https://img.shields.io/badge/Red_Hat-EE0000?logo=redhat&logoColor=white)](https://www.redhat.com)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com)
 [![SUSE Linux](https://img.shields.io/badge/SUSE_Linux-0C322C?logo=suse&logoColor=white)](https://www.suse.com)
+[![Rocky Linux](https://img.shields.io/badge/Rocky_Linux-10B981?logo=rockylinux&logoColor=white)](https://rockylinux.org)
+[![AlmaLinux](https://img.shields.io/badge/AlmaLinux-FB6D21?logo=almalinux&logoColor=white)](https://almalinux.org)
+[![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?logo=kalilinux&logoColor=white)](https://www.kali.org)
 [![Alpine Linux](https://img.shields.io/badge/Alpine_Linux-0D597F?logo=alpinelinux&logoColor=white)](https://alpinelinux.org)
 
 
